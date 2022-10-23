@@ -1,3 +1,4 @@
+//https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
 #include <bits/stdc++.h>
 using namespace std;
 struct Node
@@ -69,3 +70,20 @@ int main()
 
     return 0;
 }
+// Example 1:
+
+// Input:
+//         1
+//       /  \
+//      2    3
+// a = 2, b = 3
+// Output: 2
+// Explanation: The tree formed is:
+//        1
+//      /   \ 
+//     2     3
+// We need the distance between 2 and 3.
+// Being at node 2, we need to take two
+// steps ahead in order to reach node 3.
+// The path followed will be:
+// 2 -> 1 -> 3. Hence, the result is 2. 
