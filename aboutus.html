@@ -1,0 +1,492 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About us</title>
+
+<style>
+	
+	   * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #head {
+            height: 105px;
+            width: 100%;
+            background: -webkit-linear-gradient(#333,white);
+            position: absolute;
+            z-index: 10000;
+			z-index:1px;
+			position:fixed;
+        }
+
+        #logo {
+            height: 105px;
+            width: 220px;
+      
+            margin-left: 20px;
+        }
+
+        #nav ul {
+            list-style: none;
+			z-index:1px;
+			position:fixed;}
+
+            #nav ul li {
+                background-color: black;
+                border: 1px solid red;
+                width: 120px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                float: left;
+                border-radius: 8px;
+                position: relative;
+            }
+
+                #nav ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                    display: block;
+                }
+
+                    #nav ul li a:hover {
+                        background-color: #999;
+                        border-radius: 8px;
+                        color: black;
+                    }
+
+            #nav ul ul {
+                position: absolute;
+                display: none;
+            }
+
+            #nav ul li:hover > ul {
+                display: block;
+            }
+
+            #nav ul ul ul {
+                margin-left: 120px;
+                top: 0px;
+            }
+	
+	 img {
+            width: 220px;
+            height: 105px;
+        }
+	
+	
+	#about
+	{
+		width: 100%;
+		height: 450px;
+		background-color:#D7D7D7;
+		position:absolute;
+		
+	}
+	
+	#about2
+	{width: 100%;
+	height: 450px;
+	background-color: #E5E5E5;
+	margin-top: 440px;
+	position: absolute;
+	}
+	
+	
+	h1{text-align: center; color: black; margin-top: 120px; font-size: 70px; font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black," sans-serif"; text-decoration: underline;  }
+	
+	p{text-align: center; color: #A4A4A4; font-size: 26px; margin-top: 50px;}
+	h4{text-align: center;position: absolute; margin-top: -65px; margin-left: 70px; color:#666666; font-size: 25px; }
+	
+	#box
+	{width: 200px;
+	height: 40px;
+	background-color: #C17C9E;
+	margin-left: 550px;
+	margin-top: -30px;
+	transform: rotate(170deg);
+	border-radius: 6px;
+	
+	}
+	
+	h5{text-align: center; transform: rotate(180deg); font-size: 35px; color: #FFFFFF; box-shadow: 10px 10px 10px;  }
+	
+	.boxs
+	{width: 200px;
+	height: 200px;
+		background-color: #626262;
+		float: left;
+		margin-top: 140px;
+		margin-right: 80px;
+		margin-left: 50px;
+		border-radius: 50%;
+	}
+	
+	
+	.mainfooter
+	{width: 100%;
+	height: 350px;
+	background-image:url(0000.jpg);
+	position: absolute;
+	margin-top: 1520px;}
+	
+	
+	.footer1
+	{width: 30%;
+	height: 300px;
+	background-color: #626262;
+	margin-top: 30px;
+	float: left;
+	margin-left: 20px;
+	}
+	
+	.footer2
+	{width: 30%;
+	height: 300px;
+	background-color: #626262;
+	margin-top: 30px;
+	float: right;
+		
+	margin-right: 20px;}
+	
+	.footer3
+	{width: 30%;
+	height: 300px;
+	background-color: #626262;
+	margin-top: -20px;
+	margin-left: 470px;
+	}
+	
+		
+	
+	
+	
+	
+	#upcoming
+	{width: 100%;
+	height: 300px;
+	background-color: #9C9C9C;
+	margin-top: 900px;
+	position: absolute;}
+	
+	
+	.upbox
+	{width: 20%;
+	height: 200px;
+	background-color: #A47778;
+	float: left;
+	margin-top: 50px;
+	margin-left: 50px;}
+	
+	
+#namebox
+	{width: 13%;
+	height: 40px;
+	background-color: #E15C96;
+	transform: rotate(-15deg);
+	position: absolute;
+	margin-left: 550px;
+		margin-top: -25px;
+		border-radius: 10%;
+		box-shadow: 10px 10px 10px;
+		}
+	
+	
+	#pastevent
+	{width: 100%;
+	height: 300px;
+	background-color:#B4B4B4;
+	margin-top: 1210px;
+	position: absolute;}
+	
+	#namebox2
+	{width: 13%;
+	height: 40px;
+	background-color: #E15C96;
+	transform: rotate(-15deg);
+	position: absolute;
+	margin-left: 550px;
+		margin-top: -25px;
+		border-radius: 10%;
+		box-shadow: 10px 10px 10px;
+		}
+	
+	.upbox1
+	{width: 20%;
+	height: 200px;
+	background-color: #A47778;
+	float: left;
+	margin-top: 50px;
+	margin-left: 50px;}
+	
+	
+	#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: Black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+	
+	
+	</style>
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</head>
+
+<body>
+ 
+  <div id="head">
+ 
+
+ 
+
+ <div id="logo">
+            <img src="About img/LOGO.png"style="height:155px;margin-top:-20px;width:200px;" />
+        </div>
+        <div id="nav" style="margin-top:-40px;margin-left:450px;">
+            <ul>
+                <li><a href="../home-page.html">Home</a> </li>
+                <li><a href="../Pre-owned car/Pre-owned.html">PreOwned Cars</a> </li>
+
+
+                <li>
+                    <a href="#">Brands</a>
+                    <ul>
+                        <li>
+                            <a href="#">Toyota</a>
+                            <ul>
+                                <li><a href="../Brands/toyota prius/toyo.html">Toyota Prius</a></li>
+                                <li><a href="../Brands/toyota-corolla/toyo-corolla.html">Toyota Corolla</a></li>
+                                <li><a href="../Brands/toyota-corolla/toyo-corolla.html">Toyota Camry</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                             <a href="#">Suzuki</a>
+                            <ul>
+                                <li><a href="../Brands/suzuki Swift/Suzuki Swift.html">Suzuki Swift</a></li>
+                                <li><a href="../Brands/Suzuki Vitara/Suzuki Vitara.html">Suzuki Vitara</a></li>
+                                <li><a href="../Brands/Suzuki/Suzuki Er.html">Suzuki ER</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">Honda</a>
+                            <ul>
+                                <li><a href="../Brands/Honda City/Honda city.html">Honda City</a></li>
+                                <li><a href="../Brands/Honda Cvic/Honda Cvic.html">Honda Cvic</a></li>
+                                <li><a href="../Brands/Honda CR-V/Honda CR-V.html">Honda CV-R</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#">Range of Cars</a>
+                    <ul>
+                        <li>
+                            <a href="../Rang of cars/Small Cars/Small cars.html">Small Car</a>
+
+
+                        </li>
+                        <li>
+                            <a href="../Rang of cars/Sedan Cars/sedan cars.html">SEDAN</a>
+
+                        </li>
+                        <li>
+                            <a href="../Rang of cars/Van/Van.html">VAN</a>
+
+                        </li>
+                        <li>
+                            <a href="../Rang of cars/Jeep/Jeep.html">JEEPS</a>
+
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+                
+                <li><a href="About us.html">About Us</a> </li>
+                <li><a href="../Contact us/Contact us.html">Contact Us</a> </li>
+
+            </ul>
+
+
+
+        </div>
+    </div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div id="about">
+
+<h1>ABOUT US</h1>
+	
+	
+	
+	<p>Carvan is the Pakistan market leader in sales of hybrid electric vehicles, and one of the largest Shop to encourage the mass-market adoption of hybrid vehicles across the globe. Cumulative global sales of Carvan and Lexus hybrid passenger car models achieved the 1 million milestone in January 2017. Its Prius family is the pakistan top selling hybrid nameplate with over 1 million units sold  as of January 2017. The shop was founded by in 2015,Carvan to create automobiles. it created its first product, the Type A engine, and its first passenger car in 2016, the CARVAN AA.</p>
+	
+</div>
+>
+<div id="about2">
+	
+	<div id="box">
+		<h5>The Team</h5>
+	</div>
+	
+	<div class="boxs">
+	<h4>Nimra<br/>
+	CEO
+	</h4>
+		<img src="About img/female-296990_640.png"  style="width: 160px; height: 165px; margin-left:20px; position:absolute;">
+		<img src="About img/40316-incoming-call.png" class="rotate" style="width: 20px; height: 20px; position: absolute; margin-top: 220px;"><P style="position: absolute; font-size: 15px; color:Black; margin-left: 40px; margin-top:220px;  ">0321xxx789</P>
+		<img src="About img/12633-200.png" class="rotate" style="width: 30px; height: 25px; position: absolute; margin-top: 255px;"><p style="position: absolute; margin-top: 255px; margin-left: 40px; font-size: 15px; color: #000000;">nimra@mail.com</p>
+	</div>
+	<div class="boxs">
+		<h4>Usama<br/>
+			</h4>
+		<img src="About img/user1.png"  style=" width: 160px; height: 170px; margin-left: 20px; position: absolute;">
+<img src="About img/40316-incoming-call.png" class="rotate" style="width: 20px; height: 20px; position: absolute; margin-top: 220px;"><P style="position: absolute; font-size: 15px; color:Black; margin-left: 40px; margin-top: 220px; ">0332xxx789</P>
+		<img src="About img/12633-200.png" class="rotate" style="width: 30px; height: 25px; position: absolute; margin-top: 250px;"><p style="position: absolute; margin-top: 255px; margin-left: 40px; font-size: 15px; color: #000000;">usama@mail.com</p>	
+	</div>
+	
+	<div class="boxs">
+		<h4>Zubair<br/>
+			</h4>
+		<img src="About img/1370391822177766488business_user-md.png"  style="width: 160px; height: 200px; margin-left: 20px; position: absolute;">
+		<img src="About img/40316-incoming-call.png" class="rotate" style="width: 20px; height: 20px; position: absolute; margin-top: 220px;"><P style="position: absolute; font-size: 15px; color:Black; margin-left: 40px; margin-top: 220px; ">0305xxx789</P>
+		<img src="About img/12633-200.png" class="rotate" style="width: 30px; height: 25px; position: absolute; margin-top: 250px;"><p style="position: absolute; margin-top: 255px; margin-left: 40px; font-size: 15px; color: #000000;">Zubair@mail.com</p>
+	</div>
+	<div class="boxs">
+		<h4>Sunny<br/>
+			</h4>
+		
+	<img src="About img/user.png"  style="width: 160px; height: 180px; margin-left: 20px; position: absolute;">
+	<img src="About img/40316-incoming-call.png" class="rotate" style="width: 20px; height: 20px; position: absolute; margin-top: 220px;"><P style="position: absolute; font-size: 15px; color:Black; margin-left: 40px; margin-top: 220px; ">0331xxx789</P>
+		<img src="About img/12633-200.png" class="rotate" style="width: 30px; height: 25px; position: absolute; margin-top: 250px;"><p style="position: absolute; margin-top: 255px; margin-left: 40px; font-size: 15px; color: #000000;">Sunny@mail.com</p>
+	</div>
+	
+</div>
+
+<div id="upcoming">
+
+<div id="namebox">
+	<p style="font-size: 22px; transform: rotate(-2deg);position: absolute; margin-top: 5px; margin-left: 8px; color: #FFFFFF;
+	">UpComing Event</p>
+</div>
+	
+	<div class="upbox"><a href="upcoming event/1.html"><img src="About img/Chevrolet Car.jpg" style="width: 100%; height: 200px; "></a></div>
+	<div class="upbox"><a href="upcoming event/2.html"><img src="About img/c2.jpg" style="width: 100%; height: 200px; " ></a></div>
+	<div class="upbox"><a href="upcoming event/3.html"><img src="About img/2019-Toyota-Avalon-15.jpg" style="width: 100%; height: 200px;"></a></div>
+	<div class="upbox"><a href="upcoming event/4.html"><img src="About img/00.jpg" style="width: 100%; height: 200px; "></a></div>
+	
+</div>
+
+<div id="pastevent">
+	
+	<div id="namebox2">
+	<p style="font-size: 22px; transform: rotate(-2deg);position: absolute; margin-top: 5px; margin-left: 8px; color: #FFFFFF;
+	">Past Event Event</p>
+</div>
+	
+	<div class="upbox1"><a href="past event/11.html"><img src="About img/corolla.jpg" style="width: 100%; height: 200px; "></a></div>
+	<div class="upbox1"><a href="past event/22.html"><img src="About img/city.JPG" style="width: 100%; height: 200px; " ></a></div>
+	<div class="upbox1"><a href="past event/33.html"><img src="About img/Bmw.jpg" style="width: 100%; height: 200px;"></a></div>
+	<div class="upbox1"><a href="past event/44.html"><img src="About img/016.jpg" style="width: 100%; height: 200px; "></a></div>
+	
+</div>
+	
+</div>
+
+
+
+<div class="mainfooter">
+
+
+	
+	<div class="footer1">
+		
+		<p style="text-align: center; font-size: 35px; color: #FFFFFF; margin-top: 7px;" ><b>Feature</b></p>
+		
+		<ul type="none" style="font-size: 20px; color: #FFFFFF; margin-top: 35px; margin-left: 70px; position: absolute;	">
+			<li>Our Company</li>
+			<li>About Cars</li>
+			<li>Investor Realation</li>
+			<li>Contacts Cars</li>
+			<li>Careers</li>
+			<li>Licensing & Repair</li>
+			
+			
+			
+		</ul>
+		
+		
+	</div>
+	
+	<div class="footer2">
+	
+	<p style="margin-top: 6px; font-size: 35px; text-align: center; color: #FFFFFF;"><b>Feedback Email</b></p>
+		
+		<p style="font-size: 15px; color: #FFFFFF; position: absolute; margin-left: 110px;"><b>Join Our People who recive<br/>bi-weakly new car modals </b></p>
+		
+		<input type="text" placeholder="Email Address" style="width: 250px; height: 30px; margin-top: 100px; margin-left: 80px; text-align: center; border: solid 3px; ">
+		
+		<input type="button" value="Sgin up" style="width: 80px; height: 40px; background-color: #1EC541; border: solid 2px; border-radius: 10px; margin-left: 166px; margin-top: 10px;">
+		
+	</div>
+	
+	<div class="footer3">
+		<p style="text-align: center; font-size: 35px; color: #FFFFFF;  text-align: center; "><b>About the Company</b></p>
+		
+		<ul type="none" style="font-size: 20px; color: #FFFFFF; margin-top: 35px; margin-left: 70px; position: absolute;	">
+			<li>Buy & Selling </li>
+			<li>Find a Car</li>
+			<li>Used Cars Buying</li>
+			<li>Sell Your Car</li>
+			<li>Car Dealer</li>
+			<li>Certified Pre-owned</li>
+		</ul>
+	</div>
+	
+	
+</div>
+
+
+</body>
+</html>
