@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact us</title>
+<style>
+	
+	   * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #head {
+            height: 105px;
+            width: 100%;
+            background: -webkit-linear-gradient(#333,white);
+            position: absolute;
+            z-index: 10000;
+			z-index:1px;
+			position:fixed;
+        }
+			
+        
+
+        
+         #logo {
+            height: 105px;
+            width: 220px;
+           
+            margin-left: 20px;
+			
+        }
+
+       #nav ul {
+            list-style: none;
+			z-index:1px;
+			position:fixed;}
+           
+		   
+		    #nav ul li {
+                background-color: black;
+                border: 1px solid red;
+                width: 120px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                float: left;
+                border-radius: 8px;
+                position: relative;
+            }
+
+                #nav ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                    display: block;
+                }
+
+                    #nav ul li a:hover {
+                        background-color: #999;
+                        border-radius: 8px;
+                        color: black;
+                    }
+
+            #nav ul ul {
+                position: absolute;
+                display: none;
+            }
+
+            #nav ul li:hover > ul {
+                display: block;
+            }
+
+            #nav ul ul ul {
+                margin-left: 120px;
+                top: 0px;
+            }
+	
+	body
+	{background-color: white;}
+	
+	
+	#main
+	{
+		width: 100%;
+		height: 570px;
+		background-color: black;
+		margin-top: 105px;
+		position: absolute;
+	}
+	
+	
+	#box
+	{width: 100%;
+	height: 200px;
+	background: -webkit-linear-gradient(#333,white);
+	position: absolute;
+	margin-top: 550px;}
+	
+	
+	#map
+	{
+		width: 45%;
+		height: 450px;
+		background-color: antiquewhite;
+		position: absolute;
+		margin-left: 700px;
+	margin-top: 90px;
+	}
+	
+	
+	
+	
+	
+	#form{width: 50%; height: 500px; background-color: black; margin-left: 10px; margin-top: 40px;position: absolute;}
+	
+	#row1{width: 440px; margin-left: 20px; height: 45px; border: solid 2px; border-radius: 5px;}
+	#row2{width: 440px; margin-left: 20px; height: 45px; border: solid 2px; border-radius: 5px;}
+	#row3{width: 440px; margin-left: 58px; height: 45px; border: solid 2px; border-radius: 5px;}
+	#row5{width: 445px; margin-left: 35px; height: 55px; border: solid 2px; border-radius: 5px;}
+	#row4{width: 440px; margin-left: -450px; height: 130px; border: solid 2px; border-radius: 5px; margin-top: 75px; position: absolute;}
+	#btn{width: 70px; height: 40px; border-radius: 10px; border: solid 3px white; background-color: black; color: #FFFFFF;position:absolute; }
+	#btn:hover{background-color: #727272; color: #FFFFFF; border: solid 3px #727272;}
+	
+	
+	.mainfooter
+	{width:100%;
+	height: 350px;
+	background-image:url(img/img.jpg);
+	position: absolute;
+	margin-top: 750px;
+	border: solid 3px;}
+	
+	
+	.footer1
+	{width: 30%;
+	height: 300px;
+	background-color: #626262;
+	margin-top: 30px;
+	float: left;
+	margin-left: 20px;
+	}
+	
+	.footer2
+	{width: 30%;
+	height: 300px;
+	background-color: #626262;
+	margin-top: 30px;
+	float: right;
+		
+	margin-right: 20px;}
+	
+	.footer3
+	{width: 30%;
+	height: 300px;
+	background-color: #626262;
+	margin-top: 30px;
+	margin-left: 470px;
+	}
+	
+	a{text-decoration:none; color:#000;}
+	
+	
+	
+		#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: Black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+	
+	
+	</style>
+    
+    <script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+    
+</head>
+
+<body>
+
+ <div id="head">
+ 
+
+ 
+
+ <div id="logo">
+          <img src="img/LOGO.png"style="height:155px; margin-top:-20px; width:200px;" />
+        </div>
+        <div id="nav" style="margin-top:-40px;margin-left:450px;">
+            <ul>
+                <li><a href="../home-page.html">Home</a> </li>
+                <li><a href="../Pre-owned car/Pre-owned.html">PreOwned Cars</a> </li>
+
+
+                <li>
+                    <a href="#">Brands</a>
+                    <ul>
+                        <li>
+                            <a href="#">Toyota</a>
+                            <ul>
+                                <li><a href="../Brands/toyota prius/toyo.html">Toyota Prius</a></li>
+                                <li><a href="../Brands/toyota-corolla/toyo-corolla.html">Toyota Corolla</a></li>
+                                <li><a href="../Brands/toyota camry/toyo camry.html">Toyota Camry</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                              <a href="#">Suzuki</a>
+          ss                  <ul>
+                                <li><a href="../Brands/suzuki Swift/Suzuki Swift.html">Suzuki Swift</a></li>
+                                <li><a href="../Brands/Suzuki Vitara/Suzuki Vitara.html">Suzuki Vitara</a></li>
+                                <li><a href="../Brands/Suzuki/Suzuki Er.html">Suzuki ER</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">Honda</a>
+                            <ul>
+                                <li><a href="../Brands/Honda City/Honda city.html">Honda City</a></li>
+                                <li><a href="../Brands/Honda Cvic/Honda Cvic.html">Honda Cvic</a></li>
+                                <li><a href="../Brands/Honda CR-V/Honda CR-V.html">Honda CV-R</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#">Range of Cars</a>
+                    <ul>
+                        <li>
+                            <a href="../Rang of cars/Small Cars/Small cars.html">Small Car</a>
+
+
+                        </li>
+                        <li>
+                            <a href="../Rang of cars/Sedan Cars/sedan cars.html">SEDAN</a>
+
+                        </li>
+                        <li>
+                            <a href="../Rang of cars/Van/Van.html">VAN</a>
+
+                        </li>
+                        <li>
+                            <a href="../Rang of cars/Jeep/Jeep.html">JEEPS</a>
+
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+                <li><a href="../About us/About us.html">About Us</a> </li>
+                <li><a href="Contact us.html">Contact Us</a> </li>
+
+            </ul>
+
+
+
+        </div>
+    </div>
+
+<button onClick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+ <div id="main">
+ 
+ 
+ 	
+ 	<div id="form">
+	
+	<p style="text-align: center; font-size: 40px;color:white;"><b>Contact Form</b></p>
+	
+	<form>
+		
+		<a style="font-size: 20px; color: white;">First Name</a><input type="text" id="row1" placeholder="Your Name" pattern="[A-Za-z]{3}" required  ><br/><br/>
+		<a style="font-size: 20px; color: white;">Last Name</a><input type="text" id="row2" placeholder="Last Name" pattern="[A-Za-z]{3}" required ><br/><br/>
+		<a style="font-size: 20px; color: white;">Email</a><input type="email" id="row3" placeholder="Email Address" pattern="[a-z0-9_%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required ><br/><br/>
+		<a style="font-size: 20px; color:white;">Country</a> <select id="row5" name="country"><br/><br/>
+        
+          <option value="Select">Select Country</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="Dubai">Dubai</option>
+          <option value="usa">USA</option>
+          <option value="pakistan">UAE</option>
+          <option value="pakistan">Autralia</option>
+          <option value="pakistan">India</option>
+          <option value="pakistan">New Zeland</option>
+          <option value="pakistan">Srilanka</option>  
+        </select>
+		 <a style="font-size: 20px; margin-top: 70px; margin-left: -550px; color: white; position: absolute;">Subject</a><textarea id="row4" name="subject" placeholder="Write something.." required pattern="[]" style="resize:none"></textarea>
+        <input type="submit" value="Submit" id="btn" required  style="margin-top: 210px; margin-left: -75px; position: absolute;" ><br/><br/><br/>
+		
+			
+</form>
+	</div>
+ 	
+ 
+ 
+ <div id="map">
+ 	<img src="img/123.jpg" style="width: 100%; height: 450px;"
+ </div>
+ 
+ 
+
+ 
+ </div>
+ 
+ <div id="box">
+ 
+ <img src="img/google-location-icon-16.png" style="width: 50px; height: 60px; margin-left: 200px; margin-top: 40px;">
+ <ul type="none" style="position: absolute; margin-left: 110px;">
+ 	<li>Head Office : Shah-re-faisal Karachi</li>
+ 	<li>Site Office : Lahore Pakistan</li>
+ 	<li>Site Office : Islamabad Pakistan</li>
+ 	<li></li>
+ </ul>
+ 	
+ 	<img src="img/40316-incoming-call.png" style="width: 50px; height: 60px; margin-left: 400px; margin-top: 40px;">
+ <ul type="none" style="position: absolute; margin-left: 620px;">
+ 	<li>Mobile : 0332xx789x</li>
+ 	<li>Fax : 2344-4554-444</li>
+ 	<li>Phone : 021-2344433</li>
+ 	
+ </ul>
+ 	
+ 	<img src="img/12633-200.png" style="width: 50px; height: 50px; margin-left: 400px; margin-top: 40px;">
+ <ul type="none" style="position: absolute; margin-left: 1070px;">
+ 	<li><a href="mailto:carvan@mail.com">Carvan@mail.com</a></li>
+ 	<li><a href="mailto:center@mail.com">center@mail.com</a></li>
+ 	<li><a href="mailto:usaman@mail.com">usaman@mail.com</a></li>
+ 	
+
+</ul>
+
+</div>
+
+<div class="mainfooter">
+
+
+	
+	<div class="footer1">
+		
+		<p style="text-align: center; font-size: 35px; color: #FFFFFF; margin-top: 7px;" ><b>Feature</b></p>
+		
+		<ul type="none" style="font-size: 20px; color: #FFFFFF; margin-top: 35px; margin-left: 70px; position: absolute;	">
+			<li>Our Company</li>
+			<li>About Cars</li>
+			<li>Investor Realation</li>
+			<li>Contacts Cars</li>
+			<li>Careers</li>
+			<li>Licensing & Repair</li>
+			
+			
+			
+		</ul>
+		
+		
+	</div>
+	
+	<div class="footer2">
+	
+	<p style="margin-top: 6px; font-size: 35px; text-align: center; color: #FFFFFF;"><b>Feedback Email</b></p>
+		
+		<p style="font-size: 15px; color: #FFFFFF; position: absolute; margin-left: 110px; margin-top:30px;"><b>Join Our People who recive<br/>bi-weakly new car modals </b></p>
+		
+		<input type="text" placeholder="Email Address" style="width: 250px; height: 30px; margin-top: 100px; margin-left: 80px; text-align: center; border: solid 3px; ">
+		
+		<input type="button" value="Sgin up" style="width: 80px; height: 40px; background-color: #1EC541; border: solid 2px; border-radius: 10px; margin-left: 166px; margin-top: 10px;">
+		
+	</div>
+	
+	<div class="footer3">
+		<p style="text-align: center; font-size: 35px; color: #FFFFFF;  text-align: center; "><b>About the Company</b></p>
+		
+		<ul type="none" style="font-size: 20px; color: #FFFFFF; margin-top: 35px; margin-left: 70px; position: absolute;	">
+			<li>Buy & Selling </li>
+			<li>Find a Car</li>
+			<li>Used Cars Buying</li>
+			<li>Sell Your Car</li>
+			<li>Car Dealer</li>
+			<li>Certified Pre-owned</li>
+		</ul>
+	</div>
+	
+	
+</div>
+
+</body>
+</html>
+
+
