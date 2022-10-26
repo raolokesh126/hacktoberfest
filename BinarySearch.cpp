@@ -1,24 +1,44 @@
 //This program demonstates how to create a binary search function in c++.
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
-int binary_search(int sorted_list[], int low, int high, int element)
+ 
+int binarySearch(vector<int> v, int To_Find)
 {
-    if (high < low)
-        return -1;
-    int middle = low + (high - low)/2; 
-    if (element < sorted_list[middle])
-        return binary_search(sorted_list, low, middle-1, element);
-    else if (element > sorted_list[middle])
-        return binary_search(sorted_list, middle+1, high, element);
-    else
-        return middle;
+    int lo = 0, hi = v.size() - 1;
+    int mid;
+    // This below check covers all cases , so need to check
+    // for mid=lo-(hi-lo)/2
+    while (hi - lo > 1) {
+        int mid = (hi + lo) / 2;
+        if (v[mid] < To_Find) {
+            lo = mid + 1;
+        }
+        else {
+            hi = mid;
+        }
+    }
+    if (v[lo] == To_Find) {
+        cout << "Found"
+             << " At Index " << lo << endl;
+    }
+    else if (v[hi] == To_Find) {
+        cout << "Found"
+             << " At Index " << hi << endl;
+    }
+    else {
+        cout << "Not Found" << endl;
+    }
 }
-
-
-int main(){
-    int a[5] = {2 , 4 , 6 , 8 , 10};
-    cout<<"6 found at index: "<<binary_search(a,0,4,6);
+ 
+int main()
+{
+    vector<int> v = { 1, 3, 4, 5, 6 };
+    int To_Find = 1;
+    binarySearch(v, To_Find);
+    To_Find = 6;
+    binarySearch(v, To_Find);
+    To_Find = 10;
+    binarySearch(v, To_Find);
     return 0;
-    
 }
